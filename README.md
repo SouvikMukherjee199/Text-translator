@@ -66,7 +66,6 @@ Follow these steps to get a copy of the project up and running on your local mac
     The application will now be running on `http://localhost:5173`.
 
 ## File Structure
-Of course! Here is a professional and comprehensive README file for your text translator project. It's designed to be clear, engaging, and easy for other developers to understand and get started with.
 
 Markdown
 
@@ -137,23 +136,33 @@ Follow these steps to get a copy of the project up and running on your local mac
     
     The application will now be running on `http://localhost:5173`.
 
-## File Structure
 
-text-translator/
-├── public/                 # Public assets (e.g., index.html)
-├── src/
-│   ├── assets/             # Image or other assets
-│   ├── components/
-│   │   ├── Display.jsx     # Component for displaying the translated text
-│   │   └── Hero.jsx        # Main component containing the translation logic and UI
-│   │   └── Footer.jsx      # Footer component 
-│   │   └── Navbar.jsx      # Navbar component 
-│   ├── languages.js        # Data file with the list of languages
-│   ├── App.css
-│   ├── App.jsx
-│   └── main.jsx
-├── .env                    # Environment variables (private)
-├── .gitignore
-├── package.json
-├── tailwind.config.js
-└── README.md
+## Function
+## Overview
+
+Text Translator is a modern, single-page web application...
+
+## Demo
+
+Here are some demonstrations of the application in action:
+
+### Language Selection Dropdown
+
+[![Language Selection](Demo_images/Screenshot%20from%202025-08-11%2017-39-27.png)]
+*A view of the language selection dropdown menu.*
+
+### Translation in Progress
+
+[![Translating](Demo_images/Screenshot%20from%202025-08-11%2017-39-42.png)]
+*The "Translating..." state with a loading indicator.*
+
+### Translating to Bengali
+
+[![Translation to Bengali](Demo_images/Screenshot%20from%202025-08-11%2017-40-12.png)]
+*The user has entered "How are you?" and selected Bengali, resulting in the translation "তুমি কেমন আছো?".*
+
+### Translating to Hindi
+
+[![Translation to Hindi](Demo_images/Screenshot%20from%202025-08-11%2017-39-57.png)]
+*The user has entered "How are you?" and selected Hindi, resulting in the translation "आप कैसे हैं?".*
+
