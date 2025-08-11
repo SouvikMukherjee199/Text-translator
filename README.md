@@ -148,21 +148,21 @@ Here are some demonstrations of the application in action:
 
 ### Language Selection Dropdown
 
-[![Language Selection](Demo_images/Screenshot%20from%202025-08-11%2017-39-27.png)]
+![Language Selection](Demo_images/Screenshot%20from%202025-08-11%2017-39-27.png)
 *A view of the language selection dropdown menu.*
 
 ### Translation in Progress
 
-[![Translating](Demo_images/Screenshot%20from%202025-08-11%2017-39-42.png)]
+![Translating](Demo_images/Screenshot%20from%202025-08-11%2017-39-42.png)
 *The "Translating..." state with a loading indicator.*
 
 ### Translating to Bengali
 
-[![Translation to Bengali](Demo_images/Screenshot%20from%202025-08-11%2017-40-12.png)]
+![Translation to Bengali](Demo_images/Screenshot%20from%202025-08-11%2017-40-12.png)
 *The user has entered "How are you?" and selected Bengali, resulting in the translation "তুমি কেমন আছো?".*
 
 ### Translating to Hindi
 
-[![Translation to Hindi](Demo_images/Screenshot%20from%202025-08-11%2017-39-57.png)]
+![Translation to Hindi](Demo_images/Screenshot%20from%202025-08-11%2017-39-57.png)
 *The user has entered "How are you?" and selected Hindi, resulting in the translation "आप कैसे हैं?".*
 
