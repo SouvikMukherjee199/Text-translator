@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Nav = () => {
@@ -24,18 +25,18 @@ const Nav = () => {
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-300">
+            <Link to="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-300">
               Home
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-300">
+            </Link>
+            <Link to="/About" className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-300">
               About
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-300">
+            </Link>
+            <Link to="/Services" className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-300">
               Services
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-300">
+            </Link>
+            <Link to="/Contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-300">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button (Hamburger) */}
@@ -68,18 +69,18 @@ const Nav = () => {
         } md:hidden overflow-hidden transition-all duration-300 ease-in-out`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">
+          <Link to="/" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">
             Home
-          </a>
-          <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">
+          </Link>
+          <Link to="/About" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">
             About
-          </a>
-          <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">
+          </Link>
+          <Link to="/Services" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">
             Services
-          </a>
-          <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">
+          </Link>
+          <Link to="/Contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
