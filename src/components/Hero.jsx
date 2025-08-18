@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Display from './Display';
 import axios from 'axios';
-import {languages} from './languages';
-
+import { languages } from './languages';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Hero = () => {
   const [inputText, setInputText] = useState('');
@@ -11,7 +11,15 @@ const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const apiKey = import.meta.env.VITE_RAPIDAPI_KEY;
+  const apiHost = import.meta.env.VITE_RAPIDAPI_HOST;
+
   const handleTranslate = async () => {
+    if (!apiKey || !apiHost) {
+      toast.error('Please add your API key and host in the environment variables.');
+      return;
+    }
+
     if (!inputText.trim()) {
       setError('Please enter some text to translate.');
       return;
@@ -26,13 +34,13 @@ const Hero = () => {
         method: 'POST',
         url: 'https://google-translator9.p.rapidapi.com/v2',
         headers: {
-          'x-rapidapi-key': import.meta.env.VITE_RAPIDAPI_KEY,
-          'x-rapidapi-host': import.meta.env.VITE_RAPIDAPI_HOST,
+          'x-rapidapi-key': apiKey,
+          'x-rapidapi-host': apiHost,
           'Content-Type': 'application/json'
         },
         data: {
           q: inputText,
-          source: 'en', 
+          source: 'en',
           target: targetLanguage,
           format: 'text'
         }
@@ -55,6 +63,7 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4 font-sans">
+      <Toaster position="top-center" reverseOrder={false} />
       <div className="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-2xl text-gray-100">
         <h1 className="text-4xl font-extrabold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
           Text Translator
@@ -98,7 +107,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Pass props to Display */}
         <Display
           translatedText={translatedText}
           isLoading={isLoading}
