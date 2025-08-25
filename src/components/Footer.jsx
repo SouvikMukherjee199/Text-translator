@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -18,33 +19,33 @@ const Footer = () => {
 
           {/* Footer Links */}
           <div className="flex-1 mt-4 md:mt-0 md:flex md:items-center md:justify-end md:space-x-6">
-            <a href="#" className="text-sm font-medium hover:text-white transition-colors duration-300">
+            <Link to="#" className="text-sm font-medium hover:text-white transition-colors duration-300">
               Privacy Policy
-            </a>
-            <a href="#" className="mt-2 md:mt-0 text-sm font-medium hover:text-white transition-colors duration-300">
+            </Link>
+            <Link to="#" className="mt-2 md:mt-0 text-sm font-medium hover:text-white transition-colors duration-300">
               Terms of Service
-            </a>
-            <a href="#" className="mt-2 md:mt-0 text-sm font-medium hover:text-white transition-colors duration-300">
+            </Link>
+            <Link to="#" className="mt-2 md:mt-0 text-sm font-medium hover:text-white transition-colors duration-300">
               Sitemap
-            </a>
+            </Link>
           </div>
 
           {/* Social Media Icons */}
           <div className="flex mt-4 md:mt-0 md:ml-6 space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+            <Link to="#" className="text-gray-400 hover:text-white transition-colors duration-300">
               {/* Twitter SVG Icon */}
               <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-6 h-6">
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022 5.68a10.9 10.9 0 01-3.46 1.33A4.48 4.48 0 0015.5 4a4.48 4.48 0 00-4.5 4.5c0 .35.04.69.1.99A12.72 12.72 0 013 3.5a4.48 4.48 0 001.4 5.96 4.45 4.45 0 01-2.04-.56v.05a4.48 4.48 0 003.6 4.4A4.49 4.49 0 017 14.5a4.5 4.5 0 01-3-.93 12.63 12.63 0 007.44 2.5a12.72 12.72 0 008.5-4.5 12.63 12.63 0 000-11.45"></path>
               </svg>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+            </Link>
+            <Link to="#" className="text-gray-400 hover:text-white transition-colors duration-300">
               {/* Instagram SVG Icon */}
               <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-6 h-6">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1112.63 8a4 4 0 013.37 3.37z"></path>
                 <line x1="17.5" x2="17.5" y1="6.5" y2="6.5"></line>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

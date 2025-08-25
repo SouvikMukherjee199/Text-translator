@@ -16,11 +16,11 @@ const Nav = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand Section */}
           <div className="flex items-center">
-            <a href="#" className="flex-shrink-0">
+            <Link to="#" className="flex-shrink-0">
               <span className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">
                 Transliscense
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation Links */}
