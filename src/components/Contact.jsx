@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const initialForm = { name: '', email: '', subject: '', message: '' };
 
@@ -124,9 +125,9 @@ const ContactPage = () => {
             <div className="p-6 bg-gray-900 rounded-xl shadow-lg transition-transform duration-300 hover:-translate-y-1">
               <h2 className="text-xl font-bold mb-2">Follow Us</h2>
               <div className="flex gap-4 text-gray-400">
-                <a href="#" className="hover:text-white transition">Twitter</a>
-                <a href="#" className="hover:text-white transition">Instagram</a>
-                <a href="#" className="hover:text-white transition">GitHub</a>
+                <Link to ="#" className="hover:text-white transition">Twitter</Link>
+                <Link to ="#" className="hover:text-white transition">Instagram</Link>
+                <Link to ="https://github.com/SouvikMukherjee199/Text-translator" className="hover:text-white transition">GitHub</Link>
               </div>
             </div>
           </aside>
