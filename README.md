@@ -122,7 +122,7 @@ Follow these steps to get a copy of the project up and running on your local mac
     
     ```env
     VITE_RAPIDAPI_KEY=your_rapidapi_key_here
-    VITE_RAPIDAPI_HOST=google-translator9.p.rapidapi.com
+    VITE_RAPIDAPI_HOST=YourRapidAPIHostHere
     ```
     
     **Note:** It's a best practice to add `.env` to your `.gitignore` file to prevent it from being committed to version control.
