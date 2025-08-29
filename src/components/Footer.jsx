@@ -18,8 +18,8 @@ const Footer = () => {
           </div>
 
           {/* Footer Links */}
-          <div className="flex-1 mt-4 md:mt-0 md:flex md:items-center md:justify-end md:space-x-6">
-            <Link to="#" className="text-sm font-medium hover:text-white transition-colors duration-300">
+          <div className="flex justify-between lg:flex-1 lg:items-center items-center mt-4 md:mt-0 md:flex gap-3.5 md:items-center md:justify-end md:space-x-6">
+            <Link to="#" className="text-sm mt-2 lg:mt-0 font-medium hover:text-white transition-colors duration-300">
               Privacy Policy
             </Link>
             <Link to="#" className="mt-2 md:mt-0 text-sm font-medium hover:text-white transition-colors duration-300">
