@@ -37,7 +37,7 @@ const ContactPage = () => {
     try {
       setSubmitting(true);
       setStatus(null);
-      // Simulate sending message (replace with your API call)
+      
       await new Promise((r) => setTimeout(r, 1200));
       setStatus('success');
       setForm(initialForm);
@@ -68,7 +68,7 @@ const ContactPage = () => {
             Contact Us
           </h1>
           <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
-            Have a question, feedback, or a feature request? Reach out and we��ll get back to you.
+            Have a question, feedback, or a feature request? Reach out and we'll get back to you.
           </p>
         </header>
 
